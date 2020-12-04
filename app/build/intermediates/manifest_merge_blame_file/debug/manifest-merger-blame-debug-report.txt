@@ -1,0 +1,183 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.sytes.smart_tracking"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:5:5-65
+11-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.hardware.camera" />
+12-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:6:5-63
+12-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:6:22-60
+13    <uses-permission android:name="android.hardware.camera.autofocus" />
+13-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:7:5-73
+13-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:7:22-70
+14
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+17-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:22-64
+18
+19    <uses-feature
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+20        android:glEsVersion="0x00020000"
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+21        android:required="true" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\7752dcb5f35954b62a1d54735ffd34b4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:24:5-26:36
+23        android:name="android.hardware.camera"
+23-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:25:9-47
+24        android:required="false" />
+24-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:26:9-33
+25    <uses-feature
+25-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:27:5-29:36
+26        android:name="android.hardware.camera.front"
+26-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:28:9-53
+27        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+27-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:29:9-33
+28    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:32:5-34:36
+30        android:name="android.hardware.camera.autofocus"
+30-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:33:9-57
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:34:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:35:5-37:36
+33        android:name="android.hardware.camera.flash"
+33-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:36:9-53
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:37:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:38:5-40:36
+36        android:name="android.hardware.screen.landscape"
+36-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:39:9-57
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:40:9-33
+38    <uses-feature
+38-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:41:5-43:36
+39        android:name="android.hardware.wifi"
+39-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:42:9-45
+40        android:required="false" />
+40-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
+41
+42    <application
+42-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:9:5-47:19
+43        android:allowBackup="true"
+43-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:10:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/ic_main_round"
+47-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:11:9-45
+48        android:label="@string/app_name"
+48-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:12:9-41
+49        android:roundIcon="@mipmap/ic_main_round"
+49-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:13:9-50
+50        android:supportsRtl="true"
+50-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:14:9-35
+51        android:theme="@style/AppTheme.NoActionBar" >
+51-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:15:9-52
+52        <activity android:name="net.sytes.smart_tracking.SListActivity" />
+52-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:16:9-60
+52-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:16:19-48
+53        <activity android:name="net.sytes.smart_tracking.RegActivity" />
+53-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:17:9-49
+53-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:17:19-46
+54        <activity android:name="net.sytes.smart_tracking.EndServiceActivity" />
+54-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:18:9-56
+54-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:18:19-53
+55        <activity android:name="net.sytes.smart_tracking.NewServiceActivity" />
+55-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:19:9-56
+55-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:19:19-53
+56        <activity android:name="net.sytes.smart_tracking.Main" />
+56-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:20:9-42
+56-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:20:19-39
+57        <activity android:name="net.sytes.smart_tracking.LoginActivity" >
+57-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:21:9-27:20
+57-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:21:19-48
+58            <intent-filter>
+58-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:22:13-26:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:23:17-69
+59-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:23:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:25:17-77
+61-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:25:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:28:9-32:63
+65            android:name="net.sytes.smart_tracking.CaptureActivity"
+65-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:29:13-44
+66            android:screenOrientation="fullSensor"
+66-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:30:13-51
+67            android:stateNotNeeded="true"
+67-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:31:13-42
+68            android:windowSoftInputMode="stateAlwaysHidden" />
+68-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:32:13-60
+69
+70        <meta-data
+70-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:34:9-36:57
+71            android:name="preloaded_fonts"
+71-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:35:13-43
+72            android:resource="@array/preloaded_fonts" />
+72-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:36:13-54
+73        <meta-data
+73-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:37:9-39:71
+74            android:name="com.google.android.geo.API_KEY"
+74-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:38:13-58
+75            android:value="AIzaSyBocFMjRwuNPC3jljXBnoiqgpPwq1PwZsg" />
+75-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:39:13-68
+76        <meta-data
+76-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:40:9-42:69
+77            android:name="com.google.android.gms.version"
+77-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:41:13-58
+78            android:value="@integer/google_play_services_version" />
+78-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:42:13-66
+79
+80        <uses-library
+80-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:44:9-46:40
+81            android:name="org.apache.http.legacy"
+81-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:45:13-50
+82            android:required="false" />
+82-->D:\Programacion\AndroidStudio\SmartTracking\app\src\main\AndroidManifest.xml:46:13-37
+83
+84        <activity
+84-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+85            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+85-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+86            android:clearTaskOnLaunch="true"
+86-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+87            android:screenOrientation="sensorLandscape"
+87-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+88            android:stateNotNeeded="true"
+88-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+89            android:theme="@style/zxing_CaptureTheme"
+89-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+90            android:windowSoftInputMode="stateAlwaysHidden" />
+90-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\35a0eaeeca595075a3125fc214406af1\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+91        <activity
+91-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\a1794986c7a3c4986f9feb2359005476\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+95    </application>
+96
+97</manifest>
